@@ -1,14 +1,14 @@
-# .github - fichiers communautaires de l'organisation `blue-broadcast`
+# .github - community files for the `blue-broadcast` organization
 
-Ce dépôt fournit les fichiers **par défaut** hérités par tous les dépôts de
-l'organisation qui ne les définissent pas eux-mêmes :
+This repo provides the **default** files inherited by every organization
+repo that doesn't define its own:
 
-| Chemin | Rôle |
+| Path | Role |
 |---|---|
-| `profile/README.md` | page de présentation affichée sur <https://github.com/blue-broadcast> |
-| `profile/bb-logo.png` | logo utilisé par le profil |
-| `CONTRIBUTING.md` | guide de contribution commun |
-| `SECURITY.md` | politique de divulgation des vulnérabilités |
-| `.github/ISSUE_TEMPLATE/` | gabarit d'issue (bug) + renvoi sécurité |
+| `profile/README.md` | landing page shown at <https://github.com/blue-broadcast> |
+| `profile/bb-logo.png` | logo used by the profile |
+| `CONTRIBUTING.md` | shared contribution guide |
+| `SECURITY.md` | vulnerability disclosure policy |
+| `.github/ISSUE_TEMPLATE/` | bug issue template + security redirect |
 
-Un dépôt peut surcharger n'importe lequel de ces fichiers en le plaçant chez lui.
+A repo can override any of these files by placing its own copy locally.

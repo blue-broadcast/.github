@@ -1,36 +1,36 @@
 name: Bug
-description: Un comportement reproductible qui ne correspond pas à l'attendu.
+description: A reproducible behavior that doesn't match what's expected.
 labels: ["bug"]
 body:
   - type: dropdown
     id: repo
     attributes:
-      label: Composant concerné
+      label: Affected component
       options:
         - omt-android - SDK (omt-sdk)
         - omt-android - sample-app
         - omtplugin (OBS)
         - libomtnet (C#)
-        - autre / je ne sais pas
+        - other / not sure
     validations:
       required: true
   - type: input
     id: version
     attributes:
       label: Version
-      description: "Ex. omt-sdk 0.2.1, ou le SHA du commit."
+      description: "E.g. omt-sdk 0.2.1, or the commit SHA."
     validations:
       required: true
   - type: textarea
     id: what
     attributes:
-      label: Ce qui se passe vs ce qui devrait se passer
+      label: What happens vs. what should happen
     validations:
       required: true
   - type: textarea
     id: repro
     attributes:
-      label: Étapes de reproduction
+      label: Steps to reproduce
       placeholder: |
         1. …
         2. …
@@ -40,13 +40,13 @@ body:
   - type: textarea
     id: env
     attributes:
-      label: Environnement
-      description: "Modèle de téléphone + Android, récepteur (vMix/OBS + version), réseau (Wi-Fi 2,4/5 GHz, LAN)."
+      label: Environment
+      description: "Phone model + Android version, receiver (vMix/OBS + version), network (Wi-Fi 2.4/5 GHz, LAN)."
     validations:
       required: true
   - type: textarea
     id: logs
     attributes:
       label: Logs
-      description: "`adb logcat -s OmtSender OmtBridge OmtDiscovery` côté émetteur ; log du récepteur si pertinent."
+      description: "`adb logcat -s OmtSender OmtBridge OmtDiscovery` on the sender side; receiver log if relevant."
       render: text

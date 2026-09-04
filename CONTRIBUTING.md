@@ -1,48 +1,48 @@
-# Contribuer à BlueBroadcast
+# Contributing to BlueBroadcast
 
-Merci de l'intérêt. Ce guide s'applique à **tous les dépôts** de l'organisation
-sauf mention contraire dans le dépôt concerné.
+Thanks for your interest. This guide applies to **all repos** in the
+organization unless a specific repo says otherwise.
 
-## Où poster quoi
+## Where to post what
 
-| Sujet | Endroit |
+| Topic | Where |
 |---|---|
-| Idée, proposition de conception, **RFC** (nouveau profil, extension protocole) | **Issue** sur le dépôt concerné, label `enhancement` |
-| Question d'usage | **Issue** sur le dépôt concerné, label `question` |
-| Bug reproductible | **Issue** sur le dépôt concerné, gabarit *Bug* |
-| Correctif ou fonctionnalité | **Pull Request** sur le dépôt concerné |
-| Vulnérabilité de sécurité | **PAS d'issue publique** - voir [`SECURITY.md`](SECURITY.md) |
+| Idea, design proposal, **RFC** (new profile, protocol extension) | **Issue** on the relevant repo, `enhancement` label |
+| Usage question | **Issue** on the relevant repo, `question` label |
+| Reproducible bug | **Issue** on the relevant repo, *Bug* template |
+| Fix or feature | **Pull Request** on the relevant repo |
+| Security vulnerability | **NO public issue** - see [`SECURITY.md`](SECURITY.md) |
 
-## Licences - à savoir avant de contribuer
+## Licenses - know this before contributing
 
-| Dépôt | Licence | Ce que ça implique |
+| Repo | License | What it means |
 |---|---|---|
-| `omt-android` - **SDK** (`omt-sdk/`) | **Propriétaire** (CLUF) | pas de contribution externe de code SDK ; issues et retours bienvenus |
-| `omt-android` - `sample-app/`, outillage | MIT | PR bienvenues |
-| `omtplugin` | GPL-2.0 | toute contribution est sous GPL-2.0 |
-| `libomtnet` (fork) | MIT | toute contribution est sous MIT |
-| `omt-h264` (proposition) | CC-BY | proposition de spec + démo, destinée à l'amont OMT |
+| `omt-android` - **SDK** (`omt-sdk/`) | **Proprietary** (EULA) | no external SDK code contributions; issues and feedback welcome |
+| `omt-android` - `sample-app/`, tooling | MIT | PRs welcome |
+| `omtplugin` | GPL-2.0 | any contribution is licensed under GPL-2.0 |
+| `libomtnet` (fork) | MIT | any contribution is licensed under MIT |
+| `omt-h264` (proposal) | CC-BY | spec proposal + demo, aimed at upstream OMT |
 
-En ouvrant une PR, tu confirmes avoir le droit de soumettre le code sous la
-licence du dépôt.
+By opening a PR, you confirm you have the right to submit the code under the
+repo's license.
 
 ## Pull Requests
 
-1. **Une PR = un sujet.** Décris le *quoi* et le *pourquoi*, pas seulement le *comment*.
-2. Respecte le style du dépôt. Pour `omt-android` : commentaires et logs **en
-   français**, `./gradlew` doit rester vert (`:omt-sdk:apiCheck` compris pour
-   toute modif Kotlin publique).
-3. Ajoute/adapte les tests quand le comportement change.
-4. Lie l'issue d'origine.
+1. **One PR = one topic.** Describe the *what* and the *why*, not just the *how*.
+2. Follow the repo's style. For `omt-android`: comments and logs are
+   **in French** (a project convention), `./gradlew` must stay green
+   (including `:omt-sdk:apiCheck` for any public Kotlin change).
+3. Add or adapt tests when behavior changes.
+4. Link the originating issue.
 
-## Style de commit
+## Commit style
 
-Conventional Commits (`feat:`, `fix:`, `build:`, `docs:`, `refactor:`…),
-messages courts, dans la langue du dépôt.
+Conventional Commits (`feat:`, `fix:`, `build:`, `docs:`, `refactor:`...),
+short messages, in the repo's language.
 
-## La proposition H.264 (`omt-h264`)
+## The H.264 proposal (`omt-h264`)
 
-C'est une **proposition de standard**. Le but final est une soumission en amont
-à [openmediatransport](https://github.com/openmediatransport). Les retours sur
-le FourCC, le format de trame et la **négociation de capacités** sont les plus
-utiles - ouvre une issue `enhancement` sur `omt-h264`.
+This is a **standards proposal**. The end goal is an upstream submission to
+[openmediatransport](https://github.com/openmediatransport). Feedback on the
+FourCC, the frame format, and **capability negotiation** is the most useful
+- open an `enhancement` issue on `omt-h264`.

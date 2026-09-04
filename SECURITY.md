@@ -1,38 +1,38 @@
-# Politique de sécurité
+# Security policy
 
-## Signaler une vulnérabilité
+## Reporting a vulnerability
 
-**N'ouvre pas d'issue publique** pour une faille de sécurité.
+**Do not open a public issue** for a security flaw.
 
-Utilise l'un de ces canaux privés :
+Use one of these private channels instead:
 
-- **GitHub Security Advisories** - onglet *Security* → *Report a vulnerability*
-  du dépôt concerné (recommandé) ;
-- e-mail : **security@bluebroadcast.dev** *(à adapter à votre adresse réelle)*.
+- **GitHub Security Advisories** - the *Security* tab -> *Report a vulnerability*
+  on the affected repo (recommended);
+- email: **jonathantounga@gmail.com**.
 
-Merci d'inclure : le dépôt et la version, une description, les étapes de
-reproduction, et l'impact estimé.
+Please include: the repo and version, a description, reproduction steps,
+and the estimated impact.
 
-## Délais
+## Timelines
 
-| Étape | Cible |
+| Step | Target |
 |---|---|
-| Accusé de réception | 72 h |
-| Première évaluation | 7 jours |
-| Correctif ou plan de mitigation | selon la gravité, coordonné avec toi |
+| Acknowledgment | 72 h |
+| Initial assessment | 7 days |
+| Fix or mitigation plan | depends on severity, coordinated with you |
 
-Nous te tiendrons informé et te créditerons dans l'avis publié, sauf demande
-contraire.
+We'll keep you posted and credit you in the published advisory, unless you
+ask otherwise.
 
-## Périmètre
+## Scope
 
-Concerné : le code des dépôts de l'organisation `blue-broadcast` (SDK Android,
-forks `omtplugin` / `libomtnet`, exemples).
+In scope: code in the `blue-broadcast` organization's repos (Android SDK,
+`omtplugin` / `libomtnet` forks, samples).
 
-Hors périmètre : les dépendances tierces (les signaler à leurs mainteneurs),
-les déploiements ou configurations propres à un utilisateur.
+Out of scope: third-party dependencies (report those to their maintainers),
+deployments or configurations specific to a given user.
 
-## Versions supportées
+## Supported versions
 
-Seule la **dernière version publiée** de chaque composant reçoit des correctifs
-de sécurité.
+Only the **latest published version** of each component receives security
+fixes.

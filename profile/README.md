@@ -4,26 +4,14 @@
 
 # BlueBroadcast - Open Media Transport, mobile-first
 
-**Émettre de la vidéo broadcast sur IP, depuis un téléphone, sans licence propriétaire de transport.**
-Écosystème [OMT (Open Media Transport)](https://github.com/openmediatransport) porté par **Bethel Tech Africa**.
+**Broadcast video over IP from a phone, no proprietary transport license.**
+Part of the [OMT (Open Media Transport)](https://github.com/openmediatransport) ecosystem, built by **Bethel Tech Africa**.
 
-[![OMT](https://img.shields.io/badge/protocole-OMT-3B82F6)](https://github.com/openmediatransport)
+[![OMT](https://img.shields.io/badge/protocol-OMT-3B82F6)](https://github.com/openmediatransport)
 
 </div>
 
 ---
-
-## FR
-
-OMT est un protocole vidéo-sur-IP libre de droits : codec intra **VMX1**, audio Planar Float, Tally bidirectionnel, découverte mDNS. Notre travail :
-
-- un **SDK Android** qui transforme un téléphone en source OMT - **VMX1** pour vMix et tout récepteur standard, **H.264 matériel** pour les liaisons Wi-Fi (débit ~2,5× plus bas, CPU proche de 0) ;
-- une **proposition H.264** (pass-through) faite en amont pour les sources basse-conso / basse bande passante ;
-- des **forks outillés** du plugin OBS et de l'implémentation de référence C#.
-
-Le SDK Android est **propriétaire** (licence utilisateur final). Tout le reste - spec, forks, exemples, docs - est **ouvert**.
-
-## EN
 
 OMT is a royalty-free video-over-IP protocol: intra codec **VMX1**, Planar Float audio, bidirectional Tally, mDNS discovery. What we build:
 
@@ -31,27 +19,27 @@ OMT is a royalty-free video-over-IP protocol: intra codec **VMX1**, Planar Float
 - an **H.264 proposal** (pass-through) submitted upstream for low-power / low-bandwidth sources;
 - **tooling forks** of the OBS plugin and the C# reference implementation.
 
-The Android SDK is **proprietary** (end-user licence). Everything else - spec, forks, samples, docs - is **open**.
+The Android SDK is **proprietary** (end-user license). Everything else - spec, forks, samples, docs - is **open**.
 
 ---
 
-## Dépôts / Repositories
+## Repositories
 
-| Dépôt | Contenu | Licence | Statut |
+| Repo | Content | License | Status |
 |---|---|---|---|
-| **[omt-android](https://github.com/blue-broadcast/omt-android)** | SDK Android (`.aar`) : émetteur VMX1 + H.264, mode d'essai bridé, sample-app Compose | Propriétaire (SDK) · MIT (outillage & sample) | v0.2.1 |
-| **[omt-h264](https://github.com/blue-broadcast/omt-h264)** | Proposition H.264 pass-through pour OMT (FourCC, format de trame, négociation) + APK de démo | CC-BY | Proposition |
-| **[omtplugin](https://github.com/blue-broadcast/omtplugin)** | Fork du plugin OBS - Tally + décodage H.264 | GPL-2.0 | Fork actif |
-| **[libomtnet](https://github.com/blue-broadcast/libomtnet)** | Fork de l'implémentation C# de référence - chemin H.264 (FFmpeg) | MIT | Fork actif |
-| **[.github](https://github.com/blue-broadcast/.github)** | Ce profil + `CONTRIBUTING`, `SECURITY`, templates | - | - |
+| **[omt-android](https://github.com/blue-broadcast/omt-android)** | Android SDK (`.aar`): VMX1 + H.264 sender, capped trial mode, Compose sample-app | Proprietary (SDK) · MIT (tooling & sample) | v0.2.1 |
+| **[omt-h264](https://github.com/blue-broadcast/omt-h264)** | H.264 pass-through proposal for OMT (FourCC, frame format, negotiation) + demo APK | CC-BY | Proposal |
+| **[omtplugin](https://github.com/blue-broadcast/omtplugin)** | OBS plugin fork - Tally + H.264 decoding | GPL-2.0 | Active fork |
+| **[libomtnet](https://github.com/blue-broadcast/libomtnet)** | C# reference implementation fork - H.264 path (FFmpeg) | MIT | Active fork |
+| **[.github](https://github.com/blue-broadcast/.github)** | This profile + `CONTRIBUTING`, `SECURITY`, templates | - | - |
 
-> Les `.aar` versionnés sont publiés dans les **[Releases](https://github.com/blue-broadcast/omt-android/releases)** de `omt-android`.
+> Versioned `.aar` builds are published in `omt-android`'s **[Releases](https://github.com/blue-broadcast/omt-android/releases)**.
 
 ---
 
-## Démarrer
+## Getting started
 
-**Consommer le SDK Android** (voir [omt-android/README](https://github.com/blue-broadcast/omt-android#readme)) :
+**Consume the Android SDK** (see [omt-android/README](https://github.com/blue-broadcast/omt-android#readme)):
 
 ```kotlin
 val sender = OmtSender(
@@ -62,24 +50,24 @@ val sender = OmtSender(
         quality = OmtQuality.Medium,
         encodeWidth = OmtResolution.HD_720.width,
         encodeHeight = OmtResolution.HD_720.height,
-        videoCodec = OmtVideoCodec.Vmx1,   // ou H264 (récepteur : plugin OBS Bethel)
+        videoCodec = OmtVideoCodec.Vmx1,   // or H264 (receiver: Bethel's OBS plugin)
     ),
 )
 sender.start()
 ```
 
-**Recevoir** : vMix, OBS Studio (+ `omtplugin`), ou tout récepteur OMT standard pour VMX1.
+**Receiving**: vMix, OBS Studio (+ `omtplugin`), or any standard OMT receiver for VMX1.
 
 ---
 
-## Contribuer
+## Contributing
 
-- **Idées, RFC, bugs, PR** → sur le dépôt concerné (issue `enhancement` / `question` ou gabarit *Bug*). Voir [`CONTRIBUTING.md`](https://github.com/blue-broadcast/.github/blob/main/CONTRIBUTING.md).
-- **Sécurité** → [`SECURITY.md`](https://github.com/blue-broadcast/.github/blob/main/SECURITY.md) - divulgation responsable, pas d'issue publique.
-- La proposition H.264 vise l'**amont** : `omt-h264` sera discuté avec [openmediatransport](https://github.com/openmediatransport).
+- **Ideas, RFCs, bugs, PRs** → on the relevant repo (`enhancement` / `question` issue, or the *Bug* template). See [`CONTRIBUTING.md`](https://github.com/blue-broadcast/.github/blob/main/CONTRIBUTING.md).
+- **Security** → [`SECURITY.md`](https://github.com/blue-broadcast/.github/blob/main/SECURITY.md) - responsible disclosure, no public issues.
+- The H.264 proposal targets **upstream**: `omt-h264` will be discussed with [openmediatransport](https://github.com/openmediatransport).
 
 ---
 
 <div align="center">
-<sub>Bethel Tech Africa · en collaboration avec l'écosystème Open Media Transport</sub>
+<sub>Bethel Tech Africa · in collaboration with the Open Media Transport ecosystem</sub>
 </div>
