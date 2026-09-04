@@ -9,6 +9,6 @@ l'organisation qui ne les définissent pas eux-mêmes :
 | `profile/bb-logo.png` | logo utilisé par le profil |
 | `CONTRIBUTING.md` | guide de contribution commun |
 | `SECURITY.md` | politique de divulgation des vulnérabilités |
-| `.github/ISSUE_TEMPLATE/` | gabarits d'issues (bug, RFC) |
+| `.github/ISSUE_TEMPLATE/` | gabarit d'issue (bug) + renvoi sécurité |
 
 Un dépôt peut surcharger n'importe lequel de ces fichiers en le plaçant chez lui.

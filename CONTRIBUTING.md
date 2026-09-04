@@ -7,8 +7,8 @@ sauf mention contraire dans le dépôt concerné.
 
 | Sujet | Endroit |
 |---|---|
-| Idée, proposition de conception, **RFC** (nouveau profil, extension protocole) | [Discussions](https://github.com/orgs/blue-broadcast/discussions) → catégorie **Ideas** |
-| Question d'usage | Discussions → **Q&A** |
+| Idée, proposition de conception, **RFC** (nouveau profil, extension protocole) | **Issue** sur le dépôt concerné, label `enhancement` |
+| Question d'usage | **Issue** sur le dépôt concerné, label `question` |
 | Bug reproductible | **Issue** sur le dépôt concerné, gabarit *Bug* |
 | Correctif ou fonctionnalité | **Pull Request** sur le dépôt concerné |
 | Vulnérabilité de sécurité | **PAS d'issue publique** - voir [`SECURITY.md`](SECURITY.md) |
@@ -33,7 +33,7 @@ licence du dépôt.
    français**, `./gradlew` doit rester vert (`:omt-sdk:apiCheck` compris pour
    toute modif Kotlin publique).
 3. Ajoute/adapte les tests quand le comportement change.
-4. Lie l'issue ou la Discussion d'origine.
+4. Lie l'issue d'origine.
 
 ## Style de commit
 
@@ -45,4 +45,4 @@ messages courts, dans la langue du dépôt.
 C'est une **proposition de standard**. Le but final est une soumission en amont
 à [openmediatransport](https://github.com/openmediatransport). Les retours sur
 le FourCC, le format de trame et la **négociation de capacités** sont les plus
-utiles - ouvre une Discussion *Ideas*.
+utiles - ouvre une issue `enhancement` sur `omt-hx`.

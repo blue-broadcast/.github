@@ -7,7 +7,6 @@
 **Émettre de la vidéo broadcast sur IP, depuis un téléphone, sans licence propriétaire de transport.**
 Écosystème [OMT (Open Media Transport)](https://github.com/openmediatransport) porté par **Bethel Tech Africa**.
 
-[![Discussions](https://img.shields.io/badge/Discussions-ouvertes-2ea44f?logo=github)](https://github.com/orgs/blue-broadcast/discussions)
 [![OMT](https://img.shields.io/badge/protocole-OMT-3B82F6)](https://github.com/openmediatransport)
 
 </div>
@@ -75,8 +74,7 @@ sender.start()
 
 ## Contribuer
 
-- **Idées & RFC** → [Discussions](https://github.com/orgs/blue-broadcast/discussions), catégorie *Ideas*.
-- **Bugs & PR** → sur le dépôt concerné. Voir [`CONTRIBUTING.md`](https://github.com/blue-broadcast/.github/blob/main/CONTRIBUTING.md).
+- **Idées, RFC, bugs, PR** → sur le dépôt concerné (issue `enhancement` / `question` ou gabarit *Bug*). Voir [`CONTRIBUTING.md`](https://github.com/blue-broadcast/.github/blob/main/CONTRIBUTING.md).
 - **Sécurité** → [`SECURITY.md`](https://github.com/blue-broadcast/.github/blob/main/SECURITY.md) - divulgation responsable, pas d'issue publique.
 - Le profil H.264 vise l'**amont** : le RFC `omt-hx` sera proposé à [openmediatransport](https://github.com/openmediatransport).
 

@@ -1,11 +1,5 @@
-blank_issues_enabled: false
+blank_issues_enabled: true
 contact_links:
-  - name: Idée / RFC / proposition de conception
-    url: https://github.com/orgs/blue-broadcast/discussions/new?category=ideas
-    about: Nouvelle fonctionnalité, extension du protocole, profil de codec - à discuter avant toute PR.
-  - name: Question d'usage
-    url: https://github.com/orgs/blue-broadcast/discussions/new?category=q-a
-    about: Comment intégrer le SDK, quel codec choisir, un récepteur qui ne voit pas la source…
   - name: Vulnérabilité de sécurité
     url: https://github.com/blue-broadcast/.github/blob/main/SECURITY.md
     about: NE PAS ouvrir d'issue publique. Suivre la politique de divulgation responsable.
