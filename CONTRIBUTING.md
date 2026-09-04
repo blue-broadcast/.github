@@ -21,7 +21,7 @@ sauf mention contraire dans le dépôt concerné.
 | `omt-android` - `sample-app/`, outillage | MIT | PR bienvenues |
 | `omtplugin` | GPL-2.0 | toute contribution est sous GPL-2.0 |
 | `libomtnet` (fork) | MIT | toute contribution est sous MIT |
-| `omt-hx` (RFC) | CC-BY (texte) / MIT (exemples) | proposition de spec, destinée à l'amont OMT |
+| `omt-h264` (proposition) | CC-BY | proposition de spec + démo, destinée à l'amont OMT |
 
 En ouvrant une PR, tu confirmes avoir le droit de soumettre le code sous la
 licence du dépôt.
@@ -40,9 +40,9 @@ licence du dépôt.
 Conventional Commits (`feat:`, `fix:`, `build:`, `docs:`, `refactor:`…),
 messages courts, dans la langue du dépôt.
 
-## Le profil H.264 (`omt-hx`)
+## La proposition H.264 (`omt-h264`)
 
 C'est une **proposition de standard**. Le but final est une soumission en amont
 à [openmediatransport](https://github.com/openmediatransport). Les retours sur
 le FourCC, le format de trame et la **négociation de capacités** sont les plus
-utiles - ouvre une issue `enhancement` sur `omt-hx`.
+utiles - ouvre une issue `enhancement` sur `omt-h264`.
