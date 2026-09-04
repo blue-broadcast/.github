@@ -11,14 +11,14 @@ sauf mention contraire dans le dépôt concerné.
 | Question d'usage | Discussions → **Q&A** |
 | Bug reproductible | **Issue** sur le dépôt concerné, gabarit *Bug* |
 | Correctif ou fonctionnalité | **Pull Request** sur le dépôt concerné |
-| Vulnérabilité de sécurité | **PAS d'issue publique** — voir [`SECURITY.md`](SECURITY.md) |
+| Vulnérabilité de sécurité | **PAS d'issue publique** - voir [`SECURITY.md`](SECURITY.md) |
 
-## Licences — à savoir avant de contribuer
+## Licences - à savoir avant de contribuer
 
 | Dépôt | Licence | Ce que ça implique |
 |---|---|---|
-| `omt-android` — **SDK** (`omt-sdk/`) | **Propriétaire** (CLUF) | pas de contribution externe de code SDK ; issues et retours bienvenus |
-| `omt-android` — `sample-app/`, outillage | MIT | PR bienvenues |
+| `omt-android` - **SDK** (`omt-sdk/`) | **Propriétaire** (CLUF) | pas de contribution externe de code SDK ; issues et retours bienvenus |
+| `omt-android` - `sample-app/`, outillage | MIT | PR bienvenues |
 | `omtplugin` | GPL-2.0 | toute contribution est sous GPL-2.0 |
 | `libomtnet` (fork) | MIT | toute contribution est sous MIT |
 | `omt-hx` (RFC) | CC-BY (texte) / MIT (exemples) | proposition de spec, destinée à l'amont OMT |
@@ -45,4 +45,4 @@ messages courts, dans la langue du dépôt.
 C'est une **proposition de standard**. Le but final est une soumission en amont
 à [openmediatransport](https://github.com/openmediatransport). Les retours sur
 le FourCC, le format de trame et la **négociation de capacités** sont les plus
-utiles — ouvre une Discussion *Ideas*.
+utiles - ouvre une Discussion *Ideas*.

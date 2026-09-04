@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/blue-broadcast/.github/main/profile/bb-logo.png" alt="BlueBroadcast" width="112" />
 
-# BlueBroadcast — Open Media Transport, mobile-first
+# BlueBroadcast - Open Media Transport, mobile-first
 
 **Émettre de la vidéo broadcast sur IP, depuis un téléphone, sans licence propriétaire de transport.**
 Écosystème [OMT (Open Media Transport)](https://github.com/openmediatransport) porté par **Bethel Tech Africa**.
@@ -18,21 +18,21 @@
 
 OMT est un protocole vidéo-sur-IP libre de droits : codec intra **VMX1**, audio Planar Float, Tally bidirectionnel, découverte mDNS. Notre travail :
 
-- un **SDK Android** qui transforme un téléphone en source OMT — **VMX1** pour vMix et tout récepteur standard, **H.264 matériel** pour les liaisons Wi-Fi (débit ~10× plus bas, CPU ≈ 0) ;
+- un **SDK Android** qui transforme un téléphone en source OMT - **VMX1** pour vMix et tout récepteur standard, **H.264 matériel** pour les liaisons Wi-Fi (débit ~2,5× plus bas, CPU proche de 0) ;
 - un **profil « HX »** (H.264 pass-through) proposé en amont pour les sources basse-conso / basse bande passante ;
 - des **forks outillés** du plugin OBS et de l'implémentation de référence C#.
 
-Le SDK Android est **propriétaire** (licence utilisateur final). Tout le reste — spec, forks, exemples, docs — est **ouvert**.
+Le SDK Android est **propriétaire** (licence utilisateur final). Tout le reste - spec, forks, exemples, docs - est **ouvert**.
 
 ## EN
 
 OMT is a royalty-free video-over-IP protocol: intra codec **VMX1**, Planar Float audio, bidirectional Tally, mDNS discovery. What we build:
 
-- an **Android SDK** turning a phone into an OMT source — **VMX1** for vMix and any standard receiver, **hardware H.264** for Wi-Fi links (~10× lower bitrate, near-zero CPU);
+- an **Android SDK** turning a phone into an OMT source - **VMX1** for vMix and any standard receiver, **hardware H.264** for Wi-Fi links (~2.5× lower bitrate, near-zero CPU);
 - an **"HX" profile** (H.264 pass-through) proposed upstream for low-power / low-bandwidth sources;
 - **tooling forks** of the OBS plugin and the C# reference implementation.
 
-The Android SDK is **proprietary** (end-user licence). Everything else — spec, forks, samples, docs — is **open**.
+The Android SDK is **proprietary** (end-user licence). Everything else - spec, forks, samples, docs - is **open**.
 
 ---
 
@@ -42,9 +42,9 @@ The Android SDK is **proprietary** (end-user licence). Everything else — spec,
 |---|---|---|---|
 | **[omt-android](https://github.com/blue-broadcast/omt-android)** | SDK Android (`.aar`) : émetteur VMX1 + H.264, mode d'essai bridé, sample-app Compose | Propriétaire (SDK) · MIT (outillage & sample) | v0.2.1 |
 | **[omt-hx](https://github.com/blue-broadcast/omt-hx)** | RFC du profil vidéo H.264 pass-through pour OMT (FourCC, format de trame, négociation) | CC-BY / MIT | Brouillon |
-| **[omtplugin](https://github.com/blue-broadcast/omtplugin)** | Fork du plugin OBS — Tally + décodage H.264 | GPL-2.0 | Fork actif |
-| **[libomtnet](https://github.com/blue-broadcast/libomtnet)** | Fork de l'implémentation C# de référence — chemin H.264 (FFmpeg) | MIT | Fork actif |
-| **[.github](https://github.com/blue-broadcast/.github)** | Ce profil + `CONTRIBUTING`, `SECURITY`, templates | — | — |
+| **[omtplugin](https://github.com/blue-broadcast/omtplugin)** | Fork du plugin OBS - Tally + décodage H.264 | GPL-2.0 | Fork actif |
+| **[libomtnet](https://github.com/blue-broadcast/libomtnet)** | Fork de l'implémentation C# de référence - chemin H.264 (FFmpeg) | MIT | Fork actif |
+| **[.github](https://github.com/blue-broadcast/.github)** | Ce profil + `CONTRIBUTING`, `SECURITY`, templates | - | - |
 
 > Les `.aar` versionnés sont publiés dans les **[Releases](https://github.com/blue-broadcast/omt-android/releases)** de `omt-android`.
 
@@ -77,7 +77,7 @@ sender.start()
 
 - **Idées & RFC** → [Discussions](https://github.com/orgs/blue-broadcast/discussions), catégorie *Ideas*.
 - **Bugs & PR** → sur le dépôt concerné. Voir [`CONTRIBUTING.md`](https://github.com/blue-broadcast/.github/blob/main/CONTRIBUTING.md).
-- **Sécurité** → [`SECURITY.md`](https://github.com/blue-broadcast/.github/blob/main/SECURITY.md) — divulgation responsable, pas d'issue publique.
+- **Sécurité** → [`SECURITY.md`](https://github.com/blue-broadcast/.github/blob/main/SECURITY.md) - divulgation responsable, pas d'issue publique.
 - Le profil H.264 vise l'**amont** : le RFC `omt-hx` sera proposé à [openmediatransport](https://github.com/openmediatransport).
 
 ---

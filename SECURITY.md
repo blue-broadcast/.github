@@ -6,7 +6,7 @@
 
 Utilise l'un de ces canaux privés :
 
-- **GitHub Security Advisories** — onglet *Security* → *Report a vulnerability*
+- **GitHub Security Advisories** - onglet *Security* → *Report a vulnerability*
   du dépôt concerné (recommandé) ;
 - e-mail : **security@bluebroadcast.dev** *(à adapter à votre adresse réelle)*.
 

@@ -1,4 +1,4 @@
-# .github — fichiers communautaires de l'organisation `blue-broadcast`
+# .github - fichiers communautaires de l'organisation `blue-broadcast`
 
 Ce dépôt fournit les fichiers **par défaut** hérités par tous les dépôts de
 l'organisation qui ne les définissent pas eux-mêmes :

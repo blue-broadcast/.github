@@ -7,8 +7,8 @@ body:
     attributes:
       label: Composant concerné
       options:
-        - omt-android — SDK (omt-sdk)
-        - omt-android — sample-app
+        - omt-android - SDK (omt-sdk)
+        - omt-android - sample-app
         - omtplugin (OBS)
         - libomtnet (C#)
         - autre / je ne sais pas
